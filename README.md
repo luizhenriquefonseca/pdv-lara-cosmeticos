@@ -1,30 +1,34 @@
-# PDV LH — Lara Cosméticos
+# 🛍️ PDV LH — Sistema de Ponto de Venda (Lara Cosméticos)
 
-Sistema de ponto de venda (PDV) da Lara Cosméticos. Funciona direto no navegador, sem banco de dados externo:
-os dados ficam salvos no próprio navegador (localStorage).
+Sistema web de Ponto de Venda (PDV) e controle comercial desenvolvido sob medida para a **Lara Cosméticos**. A aplicação resolve a necessidade de registrar vendas, gerenciar produtos e acompanhar movimentações de forma rápida e intuitiva diretamente pelo navegador, sem depender de servidores complexos ou conexão constante para operar.
 
-## Estrutura
+---
 
-```
-LARA-COSMETICOS-PDV/
-├── index.html   Estrutura da página
-├── style.css    Todos os estilos
-├── script.js    Toda a lógica do sistema
-├── assets/
-│   ├── images/  (reservada)
-│   └── icons/   (reservada)
-└── README.md
-```
+## ✨ Funcionalidades
 
-## Como abrir
+- **Frente de Caixa (PDV):** Registro ágil de vendas com cálculo automático de totais.
+- **Gestão de Dados Local:** Persistência completa via `localStorage`, garantindo resposta instantânea e funcionamento offline.
+- **Portabilidade e Backup:** Funcionalidade de exportação de dados integrada na aba de Configurações, preparada para migração futura para banco de dados em nuvem (Supabase).
+- **Interface Responsiva:** Layout limpo e focado na produtividade do operador de caixa.
 
-- No VS Code com Live Server: clique com o botão direito em `index.html` > "Open with Live Server".
-  Se o navegador mostrar a lista de pastas, entre em `LARA-COSMETICOS-PDV`.
-- Ou dê dois cliques em `index.html`.
+---
 
-## Observações
+## 🛠️ Tecnologias Utilizadas
 
-- Os dados ficam salvos por endereço. Abrir pelo Live Server (127.0.0.1:5500) e abrir o arquivo direto
-  (file://) usam espaços de dados diferentes. Escolha um jeito e use sempre o mesmo.
-- Limpar os dados do navegador apaga os cadastros e as vendas.
-- Em Configurações há o botão "Exportar para o novo PDV", usado para levar os dados para a versão com Supabase no futuro.
+- **HTML5:** Estruturação semântica das telas e modais.
+- **CSS3:** Estilização customizada, layout responsivo e identidade visual[cite: 1].
+- **JavaScript (Vanilla):** Lógica de negócios, manipulação dinâmica do DOM, cálculos de venda e gerenciamento de estado no `localStorage`[cite: 1].
+
+---
+
+## 📂 Estrutura do Projeto
+
+```text
+pdv-lara-cosmeticos/
+├── index.html          # Estrutura principal da aplicação[cite: 1]
+├── style.css           # Folha de estilos e layout[cite: 1]
+├── script.js           # Regras de negócio, eventos e persistência[cite: 1]
+├── assets/             # Recursos visuais e ícones[cite: 1]
+│   ├── images/
+│   └── icons/
+└── README.md           # Documentação do projeto[cite: 1]
